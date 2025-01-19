@@ -10,7 +10,7 @@ template Example () {
     hash.inputs[0] <== a;
 
     log("hash", hash.out);
-    assert(b==hash.out);
+    b === hash.out;
 }
 
 component main { public [ b ] } = Example();
